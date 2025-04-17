@@ -5,8 +5,7 @@ void moveDiscsDiameters1ToN(int n, String startPeg,
                 moveNumber[0] = moveNumber[0].add(BigInteger.ONE), startPeg,
                 endPeg);
     } else {
-        var nMinus1 = n;
-        nMinus1--;
+        var nMinus1 = n - 1;
         moveDiscsDiameters1ToN(nMinus1, startPeg, endPeg, sparePeg,
                 moveNumber);
         System.out.printf("%d Move top disc from %s to top of %s.%n",
